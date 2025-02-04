@@ -32,8 +32,10 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
     
+    
+    //Setup initial
     printf("Lock(L) or Unlock(U)?");
-    PWM2_LoadDutyValue(46);
+    PWM2_LoadDutyValue(46); //car ça = au Milieu de 7.5% duty cycle
 
     while (1)
     {
@@ -41,17 +43,17 @@ void main(void)
         {
             case 'L':
             printf("\n\rLock");
-            PWM2_LoadDutyValue(22);
+            PWM2_LoadDutyValue(22); //car ça = au Min de 3.5% duty cycle
             break;
             
             case 'U':
             printf("\n\rUnlock");
-            PWM2_LoadDutyValue(71);
+            PWM2_LoadDutyValue(71); //car ça = au Max de 11.5% duty cycle
             break;
             
             default:
             printf("\n\rReset\n\rPesez L ou U");
-            PWM2_LoadDutyValue(46);
+            PWM2_LoadDutyValue(46); //car ça = au Milieu de 7.5% duty cycle
         }
     }
 }
