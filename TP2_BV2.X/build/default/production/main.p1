@@ -26,8 +26,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "180 ./mcc_generated_files/ccp2.h
 [; ;./mcc_generated_files/ccp2.h: 180:  void CCP2_SetCallBack(void (*customCallBack)(uint16_t));
 [v _CCP2_SetCallBack `(v ~T0 @X0 0 ef1`*F12562 ]
-"26 main.c
-[; ;main.c: 26: void Capture_CallBack(uint16_t capturedValue);
+"12 main.c
+[; ;main.c: 12: void Capture_CallBack(uint16_t capturedValue);
 [v _Capture_CallBack `(v ~T0 @X0 0 ef1`us ]
 "27 ./ecran.h
 [; ;./ecran.h: 27: void ecranAllume(void);
@@ -1425,107 +1425,98 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37211
 [; ;C:/Program Files/Microchip/MPLABX/v6.15/packs/Microchip/PIC18F-K_DFP/1.11.281/xc8\pic\include\proc\pic18f25k80.h: 37211: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"28 main.c
-[; ;main.c: 28: uint16_t capture;
-[v _capture `us ~T0 @X0 1 e ]
-"29
-[; ;main.c: 29: static uint16_t oldCapture;
-[v _oldCapture `us ~T0 @X0 1 s ]
-"30
-[; ;main.c: 30: uint16_t newCapture;
-[v _newCapture `us ~T0 @X0 1 e ]
+"14 main.c
+[; ;main.c: 14: static uint16_t capture;
+[v _capture `us ~T0 @X0 1 s ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"35
-[; ;main.c: 35: void main(void)
+"19
+[; ;main.c: 19: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"36
-[; ;main.c: 36: {
+"20
+[; ;main.c: 20: {
 {
 [e :U _main ]
 [f ]
-"37
-[; ;main.c: 37:     float periode = 0;
+"21
+[; ;main.c: 21:     float periode = 0;
 [v _periode `f ~T0 @X0 1 a ]
 [e = _periode -> -> 0 `i `f ]
-"40
-[; ;main.c: 40:     SYSTEM_Initialize();
+"24
+[; ;main.c: 24:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"49
-[; ;main.c: 49:     (INTCONbits.GIE = 1);
+"33
+[; ;main.c: 33:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-"55
-[; ;main.c: 55:     (INTCONbits.PEIE = 1);
+"39
+[; ;main.c: 39:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-"61
-[; ;main.c: 61:     CCP2_SetCallBack(Capture_CallBack);
+"45
+[; ;main.c: 45:     CCP2_SetCallBack(Capture_CallBack);
 [e ( _CCP2_SetCallBack (1 &U _Capture_CallBack ]
-"64
-[; ;main.c: 64:     ecranAllume();
+"48
+[; ;main.c: 48:     ecranAllume();
 [e ( _ecranAllume ..  ]
-"65
-[; ;main.c: 65:     videEcran();
+"49
+[; ;main.c: 49:     videEcran();
 [e ( _videEcran ..  ]
-"66
-[; ;main.c: 66:     curseurPosition(0x00);
+"50
+[; ;main.c: 50:     curseurPosition(0x00);
 [e ( _curseurPosition (1 -> 0 `i ]
-"67
-[; ;main.c: 67:     backlightAllume(8);
+"51
+[; ;main.c: 51:     backlightAllume(8);
 [e ( _backlightAllume (1 -> 8 `i ]
-"69
-[; ;main.c: 69:     printf("Periode:");
+"53
+[; ;main.c: 53:     printf("Periode:");
 [e ( _printf :s 1C ]
-"70
-[; ;main.c: 70:     while (1)
+"54
+[; ;main.c: 54:     while (1)
 [e :U 1535 ]
-"71
-[; ;main.c: 71:     {
+"55
+[; ;main.c: 55:     {
 {
-"72
-[; ;main.c: 72:         _delay((unsigned long)((500)*(20000000/4000.0)));
+"56
+[; ;main.c: 56:         _delay((unsigned long)((500)*(20000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"73
-[; ;main.c: 73:         curseurPosition(0x08);
+"57
+[; ;main.c: 57:         curseurPosition(0x08);
 [e ( _curseurPosition (1 -> 8 `i ]
-"74
-[; ;main.c: 74:         periode = oldCapture /5;
-[e = _periode -> / -> _oldCapture `ui -> -> 5 `i `ui `f ]
-"75
-[; ;main.c: 75:         printf("%0.2fus\n\r", periode);
+"58
+[; ;main.c: 58:         periode = capture /5;
+[e = _periode -> / -> _capture `ui -> -> 5 `i `ui `f ]
+"59
+[; ;main.c: 59:         printf("%0.2fus\n\r", periode);
 [e ( _printf , (. :s 2C -> _periode `d ]
-"83
-[; ;main.c: 83:     }
+"61
+[; ;main.c: 61:     }
 }
 [e :U 1534 ]
 [e $U 1535  ]
 [e :U 1536 ]
-"84
-[; ;main.c: 84: }
+"62
+[; ;main.c: 62: }
 [e :UE 1533 ]
 }
-"86
-[; ;main.c: 86: void Capture_CallBack(uint16_t capturedValue)
+"64
+[; ;main.c: 64: void Capture_CallBack(uint16_t capturedValue)
 [v _Capture_CallBack `(v ~T0 @X0 1 ef1`us ]
-"87
-[; ;main.c: 87:     {
+"65
+[; ;main.c: 65:     {
 {
 [e :U _Capture_CallBack ]
-"86
-[; ;main.c: 86: void Capture_CallBack(uint16_t capturedValue)
+"64
+[; ;main.c: 64: void Capture_CallBack(uint16_t capturedValue)
 [v _capturedValue `us ~T0 @X0 1 r1 ]
-"87
-[; ;main.c: 87:     {
+"65
+[; ;main.c: 65:     {
 [f ]
-"89
-[; ;main.c: 89:         capture = capturedValue - oldCapture;
-[e = _capture -> - -> _capturedValue `ui -> _oldCapture `ui `us ]
-"90
-[; ;main.c: 90:         oldCapture = capturedValue;
-[e = _oldCapture _capturedValue ]
-"91
-[; ;main.c: 91:         TMR1_Reload();
+"67
+[; ;main.c: 67:         capture = capturedValue;
+[e = _capture _capturedValue ]
+"68
+[; ;main.c: 68:         TMR1_Reload();
 [e ( _TMR1_Reload ..  ]
-"93
-[; ;main.c: 93:     }
+"70
+[; ;main.c: 70:     }
 [e :UE 1537 ]
 }
 [p f _printf 8462340 ]

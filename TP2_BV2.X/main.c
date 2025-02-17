@@ -55,7 +55,7 @@ void main(void)
     {
         __delay_ms(500);
         curseurPosition(0x08);
-        periode = capture /5;   //car valeur ÷ 20MHz * 4(fosc/4)
+        periode = capture /5;   //car valeur ÷ 5MHz(fosc/4)
         printf("%0.2fus\n\r", periode);
         
     }

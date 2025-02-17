@@ -65,7 +65,7 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"4 C:\Users\e1779425\Desktop\TP2_BV2.X\ecran.c
+"4 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\ecran.c
 [v _ecranAllume ecranAllume `(v  1 e 1 0 ]
 "16
 [v _curseurPosition curseurPosition `(v  1 e 1 0 ]
@@ -73,11 +73,11 @@
 [v _videEcran videEcran `(v  1 e 1 0 ]
 "34
 [v _backlightAllume backlightAllume `(v  1 e 1 0 ]
-"35 C:\Users\e1779425\Desktop\TP2_BV2.X\main.c
+"19 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"86
+"64
 [v _Capture_CallBack Capture_CallBack `(v  1 e 1 0 ]
-"60 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/ccp2.c
+"60 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/ccp2.c
 [v _CCP2_DefaultCallBack CCP2_DefaultCallBack `(v  1 s 1 CCP2_DefaultCallBack ]
 "65
 [v _CCP2_Initialize CCP2_Initialize `(v  1 e 1 0 ]
@@ -85,7 +85,7 @@
 [v _CCP2_CaptureISR CCP2_CaptureISR `(v  1 e 1 0 ]
 "106
 [v _CCP2_SetCallBack CCP2_SetCallBack `(v  1 e 1 0 ]
-"66 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/eusart1.c
+"66 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 "132
 [v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
@@ -103,17 +103,17 @@
 [v _EUSART1_SetOverrunErrorHandler EUSART1_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "169
 [v _EUSART1_SetErrorHandler EUSART1_SetErrorHandler `(v  1 e 1 0 ]
-"52 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "58
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/mcc.c
+"50 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "61
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/tmr1.c
+"64 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "120
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
@@ -234,11 +234,11 @@
 [v _BAUDCON1 BAUDCON1 `VEuc  1 e 1 @4007 ]
 "32038
 [v _T1GCON T1GCON `VEuc  1 e 1 @4010 ]
-[s S638 . 1 `uc 1 . 1 0 :3:0 
+[s S556 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T1GGO_NOT_T1DONE 1 0 :1:3 
 ]
 "32072
-[s S641 . 1 `uc 1 T1GSS 1 0 :2:0 
+[s S559 . 1 `uc 1 T1GSS 1 0 :2:0 
 `uc 1 T1GVAL 1 0 :1:2 
 `uc 1 T1GGO_nT1DONE 1 0 :1:3 
 `uc 1 T1GSPM 1 0 :1:4 
@@ -246,22 +246,22 @@
 `uc 1 T1GPOL 1 0 :1:6 
 `uc 1 TMR1GE 1 0 :1:7 
 ]
-[s S649 . 1 `uc 1 T1GSS0 1 0 :1:0 
+[s S567 . 1 `uc 1 T1GSS0 1 0 :1:0 
 `uc 1 T1GSS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T1GGO 1 0 :1:3 
 ]
-[s S654 . 1 `uc 1 . 1 0 :3:0 
+[s S572 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_T1DONE 1 0 :1:3 
 ]
-[s S657 . 1 `uc 1 . 1 0 :3:0 
+[s S575 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 nT1DONE 1 0 :1:3 
 ]
-[u S660 . 1 `S638 1 . 1 0 `S641 1 . 1 0 `S649 1 . 1 0 `S654 1 . 1 0 `S657 1 . 1 0 ]
-[v _T1GCONbits T1GCONbits `VES660  1 e 1 @4010 ]
+[u S578 . 1 `S556 1 . 1 0 `S559 1 . 1 0 `S567 1 . 1 0 `S572 1 . 1 0 `S575 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES578  1 e 1 @4010 ]
 "32142
 [v _RCSTA1 RCSTA1 `VEuc  1 e 1 @4011 ]
-[s S858 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S776 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -271,22 +271,22 @@
 `uc 1 SPEN 1 0 :1:7 
 ]
 "32197
-[s S867 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S785 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :2:1 
 `uc 1 ADEN 1 0 :1:3 
 `uc 1 . 1 0 :2:4 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S873 . 1 `uc 1 . 1 0 :6:0 
+[s S791 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 NOT_RC8 1 0 :1:6 
 ]
-[s S876 . 1 `uc 1 . 1 0 :6:0 
+[s S794 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S879 . 1 `uc 1 . 1 0 :6:0 
+[s S797 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[s S882 . 1 `uc 1 RX9D1 1 0 :1:0 
+[s S800 . 1 `uc 1 RX9D1 1 0 :1:0 
 `uc 1 OERR1 1 0 :1:1 
 `uc 1 FERR1 1 0 :1:2 
 `uc 1 ADDEN1 1 0 :1:3 
@@ -295,14 +295,14 @@
 `uc 1 RX91 1 0 :1:6 
 `uc 1 SPEN1 1 0 :1:7 
 ]
-[s S891 . 1 `uc 1 . 1 0 :5:0 
+[s S809 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 SRENA 1 0 :1:5 
 ]
-[u S894 . 1 `S858 1 . 1 0 `S867 1 . 1 0 `S873 1 . 1 0 `S876 1 . 1 0 `S879 1 . 1 0 `S882 1 . 1 0 `S891 1 . 1 0 ]
-[v _RCSTA1bits RCSTA1bits `VES894  1 e 1 @4011 ]
+[u S812 . 1 `S776 1 . 1 0 `S785 1 . 1 0 `S791 1 . 1 0 `S794 1 . 1 0 `S797 1 . 1 0 `S800 1 . 1 0 `S809 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES812  1 e 1 @4011 ]
 "32480
 [v _TXSTA1 TXSTA1 `VEuc  1 e 1 @4012 ]
-[s S795 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S713 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -312,17 +312,17 @@
 `uc 1 CSRC 1 0 :1:7 
 ]
 "32525
-[s S804 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S722 . 1 `uc 1 TXD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[s S808 . 1 `uc 1 . 1 0 :6:0 
+[s S726 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 NOT_TX8 1 0 :1:6 
 ]
-[s S811 . 1 `uc 1 . 1 0 :6:0 
+[s S729 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nTX8 1 0 :1:6 
 ]
-[s S814 . 1 `uc 1 TX9D1 1 0 :1:0 
+[s S732 . 1 `uc 1 TX9D1 1 0 :1:0 
 `uc 1 TRMT1 1 0 :1:1 
 `uc 1 BRGH1 1 0 :1:2 
 `uc 1 SENDB1 1 0 :1:3 
@@ -331,8 +331,8 @@
 `uc 1 TX91 1 0 :1:6 
 `uc 1 CSRC1 1 0 :1:7 
 ]
-[u S823 . 1 `S795 1 . 1 0 `S804 1 . 1 0 `S808 1 . 1 0 `S811 1 . 1 0 `S814 1 . 1 0 ]
-[v _TXSTA1bits TXSTA1bits `VES823  1 e 1 @4012 ]
+[u S741 . 1 `S713 1 . 1 0 `S722 1 . 1 0 `S726 1 . 1 0 `S729 1 . 1 0 `S732 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES741  1 e 1 @4012 ]
 "32768
 [v _TXREG1 TXREG1 `VEuc  1 e 1 @4013 ]
 "32806
@@ -341,11 +341,11 @@
 [v _SPBRG1 SPBRG1 `VEuc  1 e 1 @4015 ]
 "35259
 [v _T1CON T1CON `VEuc  1 e 1 @4045 ]
-[s S590 . 1 `uc 1 . 1 0 :2:0 
+[s S508 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_T1SYNC 1 0 :1:2 
 ]
 "35291
-[s S593 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S511 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 RD16 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 SOSCEN 1 0 :1:3 
@@ -353,23 +353,23 @@
 `uc 1 TMR1CS 1 0 :2:6 
 ]
 "35291
-[s S600 . 1 `uc 1 . 1 0 :4:0 
+[s S518 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 `uc 1 TMR1CS0 1 0 :1:6 
 `uc 1 TMR1CS1 1 0 :1:7 
 ]
 "35291
-[s S606 . 1 `uc 1 . 1 0 :3:0 
+[s S524 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 T1OSCEN 1 0 :1:3 
 `uc 1 . 1 0 :3:4 
 `uc 1 T1RD16 1 0 :1:7 
 ]
 "35291
-[u S611 . 1 `S590 1 . 1 0 `S593 1 . 1 0 `S600 1 . 1 0 `S606 1 . 1 0 ]
+[u S529 . 1 `S508 1 . 1 0 `S511 1 . 1 0 `S518 1 . 1 0 `S524 1 . 1 0 ]
 "35291
 "35291
-[v _T1CONbits T1CONbits `VES611  1 e 1 @4045 ]
+[v _T1CONbits T1CONbits `VES529  1 e 1 @4045 ]
 "35368
 [v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
 "35388
@@ -423,11 +423,11 @@
 [v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
 "35693
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
-[s S1003 . 1 `uc 1 . 1 0 :7:0 
+[s S921 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "36579
-[s S1006 . 1 `uc 1 RBIP 1 0 :1:0 
+[s S924 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 INT3IP 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 INTEDG3 1 0 :1:3 
@@ -437,17 +437,17 @@
 `uc 1 nRBPU 1 0 :1:7 
 ]
 "36579
-[s S1015 . 1 `uc 1 . 1 0 :1:0 
+[s S933 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT3P 1 0 :1:1 
 `uc 1 T0IP 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 RBPU 1 0 :1:7 
 ]
 "36579
-[u S1021 . 1 `S1003 1 . 1 0 `S1006 1 . 1 0 `S1015 1 . 1 0 ]
+[u S939 . 1 `S921 1 . 1 0 `S924 1 . 1 0 `S933 1 . 1 0 ]
 "36579
 "36579
-[v _INTCON2bits INTCON2bits `VES1021  1 e 1 @4081 ]
+[v _INTCON2bits INTCON2bits `VES939  1 e 1 @4081 ]
 [s S275 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
@@ -484,38 +484,36 @@
 [v _flags flags `uc  1 s 1 flags ]
 "185
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
-"28 C:\Users\e1779425\Desktop\TP2_BV2.X\main.c
-[v _capture capture `us  1 e 2 0 ]
-"29
-[v _oldCapture oldCapture `us  1 s 2 oldCapture ]
-"54 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/ccp2.c
+"14 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\main.c
+[v _capture capture `us  1 s 2 capture ]
+"54 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/ccp2.c
 [v _CCP2_CallBack CCP2_CallBack `*.37(v  1 s 2 CCP2_CallBack ]
-[s S733 . 1 `uc 1 perr 1 0 :1:0 
+[s S651 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/eusart1.c
-[u S738 . 1 `S733 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusart1RxLastError eusart1RxLastError `VES738  1 e 1 0 ]
+"52 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/eusart1.c
+[u S656 . 1 `S651 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusart1RxLastError eusart1RxLastError `VES656  1 e 1 0 ]
 "58
 [v _EUSART1_FramingErrorHandler EUSART1_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
 [v _EUSART1_OverrunErrorHandler EUSART1_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART1_ErrorHandler EUSART1_ErrorHandler `*.37(v  1 e 2 0 ]
-"57 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/tmr1.c
+"57 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
 "58
 [v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
-"35 C:\Users\e1779425\Desktop\TP2_BV2.X\main.c
+"19 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"37
-[v main@periode periode `f  1 a 4 0 ]
-"84
+"21
+[v main@periode periode `f  1 a 4 53 ]
+"62
 } 0
-"23 C:\Users\e1779425\Desktop\TP2_BV2.X\ecran.c
+"23 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\ecran.c
 [v _videEcran videEcran `(v  1 e 1 0 ]
 {
 "27
@@ -534,9 +532,9 @@
 {
 "1820
 [v vfprintf@cfmt cfmt `*.31uc  1 a 1 44 ]
-[s S1562 _IO_FILE 0 ]
+[s S1558 _IO_FILE 0 ]
 "1817
-[v vfprintf@fp fp `*.39S1562  1 p 2 74 ]
+[v vfprintf@fp fp `*.39S1558  1 p 2 74 ]
 [v vfprintf@fmt fmt `*.31Cuc  1 p 1 76 ]
 [v vfprintf@ap ap `*.30*.30v  1 p 1 77 ]
 "1840
@@ -544,17 +542,17 @@
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
 {
-[u S1612 . 4 `d 1 f 4 0 ]
+[u S1608 . 4 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S1612  1 a 4 67 ]
+[v vfpfcnvrt@convarg convarg `S1608  1 a 4 67 ]
 "1179
 [v vfpfcnvrt@cp cp `*.31uc  1 a 1 73 ]
 [v vfpfcnvrt@c c `uc  1 a 1 72 ]
 "1180
 [v vfpfcnvrt@done done `a  1 a 1 71 ]
-[s S1562 _IO_FILE 0 ]
+[s S1558 _IO_FILE 0 ]
 "1177
-[v vfpfcnvrt@fp fp `*.39S1562  1 p 2 61 ]
+[v vfpfcnvrt@fp fp `*.39S1558  1 p 2 61 ]
 [v vfpfcnvrt@fmt fmt `*.30*.31uc  1 p 1 63 ]
 [v vfpfcnvrt@ap ap `*.30*.30v  1 p 1 64 ]
 "1814
@@ -584,15 +582,15 @@
 "587 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\doprnt.c
 [v _efgtoa efgtoa `(v  1 s 1 efgtoa ]
 {
-[u S1575 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+[u S1571 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
 "592
-[v efgtoa@u u `S1575  1 a 4 40 ]
-[v efgtoa@g g `S1575  1 a 4 34 ]
+[v efgtoa@u u `S1571  1 a 4 40 ]
+[v efgtoa@g g `S1571  1 a 4 34 ]
 "591
 [v efgtoa@l l `d  1 a 4 27 ]
 [v efgtoa@h h `d  1 a 4 23 ]
 "592
-[v efgtoa@ou ou `S1575  1 a 4 17 ]
+[v efgtoa@ou ou `S1571  1 a 4 17 ]
 "590
 [v efgtoa@n n `i  1 a 2 38 ]
 [v efgtoa@i i `i  1 a 2 31 ]
@@ -608,9 +606,9 @@
 [v efgtoa@nmode nmode `uc  1 a 1 10 ]
 [v efgtoa@mode mode `uc  1 a 1 9 ]
 [v efgtoa@pp pp `uc  1 a 1 8 ]
-[s S1562 _IO_FILE 0 ]
+[s S1558 _IO_FILE 0 ]
 "587
-[v efgtoa@fp fp `*.39S1562  1 p 2 53 ]
+[v efgtoa@fp fp `*.39S1558  1 p 2 53 ]
 [v efgtoa@f f `d  1 p 4 55 ]
 [v efgtoa@c c `uc  1 p 1 59 ]
 "868
@@ -630,9 +628,9 @@
 {
 "195
 [v pad@i i `i  1 a 2 31 ]
-[s S1562 _IO_FILE 0 ]
+[s S1558 _IO_FILE 0 ]
 "193
-[v pad@fp fp `*.39S1562  1 p 2 25 ]
+[v pad@fp fp `*.39S1558  1 p 2 25 ]
 [v pad@buf buf `*.30uc  1 p 1 27 ]
 [v pad@p p `i  1 p 2 28 ]
 "226
@@ -646,21 +644,21 @@
 [v fputs@c c `uc  1 a 1 22 ]
 "8
 [v fputs@s s `*.30Cuc  1 p 1 19 ]
-[u S1540 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S1543 _IO_FILE 12 `S1540 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v fputs@fp fp `*.39S1543  1 p 2 20 ]
+[u S1536 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1539 _IO_FILE 12 `S1536 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputs@fp fp `*.39S1539  1 p 2 20 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 10 ]
-[u S1540 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
-[s S1543 _IO_FILE 12 `S1540 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
-[v fputc@fp fp `*.39S1543  1 p 2 12 ]
+[u S1536 . 3 `*.2uc 1 buffer 3 0 `*.2Cuc 1 source 3 0 ]
+[s S1539 _IO_FILE 12 `S1536 1 . 3 0 `i 1 count 2 3 `[3]uc 1 ungetbuf 3 5 `i 1 ungetcnt 2 8 `i 1 limit 2 10 ]
+[v fputc@fp fp `*.39S1539  1 p 2 12 ]
 "24
 } 0
-"141 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/eusart1.c
+"141 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/eusart1.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@txData txData `uc  1 a 1 wreg ]
@@ -693,9 +691,9 @@
 "3 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S1684 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S1680 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S1684  1 a 4 49 ]
+[v floorf@u u `S1680  1 a 4 49 ]
 "7
 [v floorf@m m `ul  1 a 4 43 ]
 "6
@@ -703,21 +701,21 @@
 "3
 [v floorf@x x `f  1 p 4 33 ]
 "4
-[v floorf@F521 F521 `S1684  1 s 4 F521 ]
+[v floorf@F521 F521 `S1680  1 s 4 F521 ]
 "27
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S1684 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S1680 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S1684  1 a 4 18 ]
+[v ___fpclassifyf@u u `S1680  1 a 4 18 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 16 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 8 ]
 "5
-[v ___fpclassifyf@F465 F465 `S1684  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S1680  1 s 4 F465 ]
 "11
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\fltol.c
@@ -762,17 +760,17 @@
 "8 C:\Program Files\Microchip\xc8\v2.45\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1401 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1397 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1406 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S1409 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1401 1 fAsBytes 4 0 `S1406 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1409  1 a 4 27 ]
+[s S1402 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1405 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1397 1 fAsBytes 4 0 `S1402 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1405  1 a 4 27 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 22 ]
-[s S1477 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1473 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1480 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1477 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1480  1 a 2 31 ]
+[u S1476 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1473 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1476  1 a 2 31 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 26 ]
 "11
@@ -818,7 +816,7 @@
 [v ___fldiv@a a `d  1 p 4 12 ]
 "185
 } 0
-"4 C:\Users\e1779425\Desktop\TP2_BV2.X\ecran.c
+"4 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\ecran.c
 [v _ecranAllume ecranAllume `(v  1 e 1 0 ]
 {
 "8
@@ -835,7 +833,7 @@
 [v backlightAllume@brightness brightness `i  1 p 2 9 ]
 "39
 } 0
-"132 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/eusart1.c
+"132 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Write EUSART1_Write `(v  1 e 1 0 ]
 {
 [v EUSART1_Write@txData txData `uc  1 a 1 wreg ]
@@ -862,20 +860,20 @@
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "10
-[v ___lwdiv@quotient quotient `ui  1 a 2 13 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 12 ]
 "11
-[v ___lwdiv@counter counter `uc  1 a 1 12 ]
+[v ___lwdiv@counter counter `uc  1 a 1 14 ]
 "7
 [v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
 [v ___lwdiv@divisor divisor `ui  1 p 2 10 ]
 "30
 } 0
-"50 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/mcc.c
+"50 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "59
 } 0
-"64 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/tmr1.c
+"64 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "91
@@ -886,22 +884,22 @@
 [v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 8 ]
 "173
 } 0
-"55 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "90
 } 0
-"61 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/mcc.c
+"61 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "71
 } 0
-"52 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "56
 } 0
-"66 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/eusart1.c
+"66 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/eusart1.c
 [v _EUSART1_Initialize EUSART1_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -924,7 +922,7 @@
 [v EUSART1_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 8 ]
 "171
 } 0
-"65 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/ccp2.c
+"65 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/ccp2.c
 [v _CCP2_Initialize CCP2_Initialize `(v  1 e 1 0 ]
 {
 "89
@@ -935,12 +933,12 @@
 [v CCP2_SetCallBack@customCallBack customCallBack `*.37(v  1 p 2 8 ]
 "108
 } 0
-"58 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/interrupt_manager.c
+"58 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
 "80
 } 0
-"157 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/tmr1.c
+"157 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/tmr1.c
 [v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
 {
 "168
@@ -950,7 +948,7 @@
 {
 "178
 } 0
-"91 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/ccp2.c
+"91 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/ccp2.c
 [v _CCP2_CaptureISR CCP2_CaptureISR `(v  1 e 1 0 ]
 {
 [s S148 . 2 `uc 1 ccpr2l 1 0 `uc 1 ccpr2h 1 1 ]
@@ -965,13 +963,13 @@
 {
 "63
 } 0
-"86 C:\Users\e1779425\Desktop\TP2_BV2.X\main.c
+"64 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\main.c
 [v _Capture_CallBack Capture_CallBack `(v  1 e 1 0 ]
 {
 [v Capture_CallBack@capturedValue capturedValue `us  1 p 2 2 ]
-"93
+"70
 } 0
-"142 C:\Users\e1779425\Desktop\TP2_BV2.X\mcc_generated_files/tmr1.c
+"142 C:\Users\Marc\OneDrive - Collège de Maisonneuve\Session 4\(Prog 3) Microcontroleurs et Interfaces\TP2_BV2.X\mcc_generated_files/tmr1.c
 [v _TMR1_Reload TMR1_Reload `(v  1 e 1 0 ]
 {
 "145

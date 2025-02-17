@@ -7,7 +7,14 @@
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 23 "main.c"
+
+
+
+
+
+
+
+
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.45\\pic\\include\\xc.h" 1 3
@@ -20414,7 +20421,7 @@ void EUSART1_SetErrorHandler(void (* interruptHandler)(void));
 void SYSTEM_Initialize(void);
 # 86 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 23 "main.c" 2
+# 9 "main.c" 2
 
 # 1 "./ecran.h" 1
 # 27 "./ecran.h"
@@ -20429,14 +20436,12 @@ void videEcran(void);
 void ecrireCaractere(char caractere);
 # 77 "./ecran.h"
 void backlightAllume(int brightness);
-# 24 "main.c" 2
+# 10 "main.c" 2
 
 
 void Capture_CallBack(uint16_t capturedValue);
 
-uint16_t capture;
-static uint16_t oldCapture;
-uint16_t newCapture;
+static uint16_t capture;
 
 
 
@@ -20447,7 +20452,7 @@ void main(void)
 
 
     SYSTEM_Initialize();
-# 49 "main.c"
+# 33 "main.c"
     (INTCONbits.GIE = 1);
 
 
@@ -20473,14 +20478,8 @@ void main(void)
     {
         _delay((unsigned long)((500)*(20000000/4000.0)));
         curseurPosition(0x08);
-        periode = oldCapture /5;
+        periode = capture /5;
         printf("%0.2fus\n\r", periode);
-
-
-
-
-
-
 
     }
 }
@@ -20488,8 +20487,7 @@ void main(void)
 void Capture_CallBack(uint16_t capturedValue)
     {
 
-        capture = capturedValue - oldCapture;
-        oldCapture = capturedValue;
+        capture = capturedValue;
         TMR1_Reload();
 
     }
